@@ -1,13 +1,16 @@
 # M-t-oWikiApp
 
-Travail pratique programmation web côté serveur.
+<p>Travail pratique programmation web côté serveur.</p>
+<br>
 
-Une application permettant d’accéder aux conditions météorologiques 
+<p>Une application permettant d’accéder aux conditions météorologiques 
 de différentes villes. Cette application est rendue sur le
-serveur (server side rendering) à l’aide de Handlebars et de Node.js.
+serveur (server side rendering) à l’aide de Handlebars et de Node.js.</p>
 
-Travail fait:
-Création des templates
-Connexion à l’API de wttr.in
+<p><b>Travail fait:</b></p>
+<ul>
+  <li>Création des templates</li>
+  <li>Connexion à l’API de wttr.in</li>
+</ul>
 
 
