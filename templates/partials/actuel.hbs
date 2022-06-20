@@ -1,0 +1,45 @@
+<div class="container">
+    <fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        {{data.nearest_area.[0].areaName.[0].value}},{{data.nearest_area.[0].region.[0].value}},{{data.nearest_area.[0].country.[0].value}}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Température: </strong> {{data.current_condition.[0].temp_C}}°C (ressentie
+                        {{data.current_condition.[0].FeelsLikeC}}°C)</td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Conditions: </strong>{{data.current_condition.[0].weatherDesc.[0].value}}
+                </tr>
+                <tr>
+                    <td><strong>Vents: </strong>{{data.current_condition.[0].windspeedKmph}} Km/h</td>
+                </tr>
+                <tr>
+                    <td><strong>Visibilité: </strong>{{data.current_condition.[0].visibility}} km</td>
+                </tr>
+
+                <tr>
+                    <td><strong>UV: </strong>{{data.current_condition.[0].uvIndex}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Humidité: </strong>{{data.current_condition.[0].humidity}}%</td>
+                </tr>
+                <tr>
+                    <td><strong>Précipitations: </strong>{{data.current_condition.[0].precipMM}} mm</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="update">Dernière observation: {{data.current_condition.[0].localObsDateTime}}(heure
+                        locale)</td>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
+</div>

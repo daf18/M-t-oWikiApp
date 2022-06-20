@@ -1,0 +1,27 @@
+<h4>{{data.nearest_area.[0].areaName.[0].value}},{{data.nearest_area.[0].region.[0].value}},{{data.nearest_area.[0].country.[0].value}}
+</h4>
+
+{{#each data.weather.[0].hourly}}
+
+<div class="container">
+    <fieldset>
+        <table>
+            <tr>
+                <td><strong>Temps: </strong> {{time}} </td>
+            </tr>
+            <tr>
+                <td><strong>Température: </strong> {{tempC}}°C (ressentie
+                    {{FeelsLikeC}}°C)
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Pourcentage de pluie: </strong>{{chanceofrain}}
+            </tr>
+            <tr>
+                <td><strong>Pourcentage de neige: </strong>{{chanceofsnow}}</td>
+            </tr>
+        </table>
+    </fieldset>
+</div>
+{{/each}}
+<h5>***Dernière observation: {{data.current_condition.[0].localObsDateTime}}</h5>

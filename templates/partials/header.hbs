@@ -1,0 +1,17 @@
+<header>
+    <nav>
+
+        <img class="logo" src="/logo.png">
+        <h4 class="company">MétéoWiki</h4>
+        {{!-- lien ver la route /now --}}
+        <a href="/weather?location={{location}}">Condition actuelle</a>
+        {{!-- lien vers la route /hourly --}}
+        <a href="/weather?location={{location}}&interval=hourly">Prochaines heures</a>
+
+        <form action="/weather">
+            <input name="location" type="search" value="{{location}}" id="searchedCity" placeholder="Recherche...">
+        </form>
+
+        <hr>
+    </nav>
+</header>
